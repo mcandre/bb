@@ -1,0 +1,76 @@
+#!/usr/bin/env gawk -f
+
+# awkward! Unused function parameters behave as local variables.
+#
+# By convention, these are offset with spaces to the right side
+# of the function declaration, away from any legitimate parameters.
+function help(    i) {
+    print "Usage: bb [<task> [<task> [<task> ...]]]\n\nTasks:\n"
+
+    for (i = 1; i <= task_count; i++) {
+        print "* " sorted_task_names[i]
+    }
+}
+
+function all() {
+    test()
+}
+
+function test() {
+    if ((2 + 2) != 4) {
+        print "error: universe failure" >/dev/stderr
+        exit 1
+    }
+
+    print "bzz bzz"
+}
+
+# Extract task names from self script.
+#
+# Store hashmap entries in global `task_names` associative array.
+# Store sorted names in global `sorted_task_names` array.
+#
+# Functions prefixed with an underscore (_) are skipped.
+function _populate_task_names(    cmd, result, i, task) {
+    cmd = "gawk 'match($0, /^function ([a-zA-Z0-9][a-zA-Z0-9_]*)\\(/, a) { print a[1] }' " ENVIRON["_"]
+
+    while ((cmd | getline result) > 0) {
+        task_names[result] = 0
+    }
+
+    if (close(cmd) != 0) {
+        print "error closing awk subprocess" >/dev/stderr
+        exit 1
+    }
+
+    i = 0
+
+    for (task in task_names) {
+        sorted_task_names[i++] = task
+    }
+
+    task_count = asort(sorted_task_names)
+}
+
+BEGIN {
+    default_task = "all"
+
+    if (ARGC < 2) {
+        @default_task()
+    }
+
+    _populate_task_names()
+
+    for (i = 1; i < ARGC; i++) {
+        task = ARGV[i]
+
+        if (!(task in task_names)) {
+            help()
+            exit 1
+        }
+
+        @task()
+    }
+
+    exit 0
+}
