@@ -1,4 +1,4 @@
-# bb: a build system for (g)awk projects
+# bb: the awk build system
 
 # ABOUT
 
