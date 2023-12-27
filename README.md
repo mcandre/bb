@@ -32,12 +32,14 @@ Tasks:
 * Inspiration from [nobuild](https://github.com/tsoding/nobuild), a convention for C/C++ build systems
 * [bashate](https://github.com/openstack/bashate), a shell script style linter
 * [beltaloada](https://github.com/mcandre/beltaloada), a guide to writing build systems for (POSIX) sh
+* [dale](https://github.com/mcandre/dale) builds D projects
 * [Gradle](https://gradle.org/), a build system for JVM projects
 * [lake](https://luarocks.org/modules/steved/lake), a Lua task runner
 * [Mage](https://magefile.org/), a task runner for Go projects
 * [npm](https://www.npmjs.com/), [Grunt](https://gruntjs.com/), Node.js task runners
 * [POSIX make](https://pubs.opengroup.org/onlinepubs/009695299/utilities/make.html), a task runner standard for C/C++ and various other software projects
 * [Rake](https://ruby.github.io/rake/), a task runner for Ruby projects
+* [rez](https://github.com/mcandre/rez) builds C/C++ projects
 * [Shake](https://shakebuild.com/), a task runner for Haskell projects
 * [ShellCheck](https://www.shellcheck.net/), a shell script linter with a rich collection of rules for promoting safer scripting
 * [slick](https://github.com/mcandre/slick), a linter to enforce stricter, unextended POSIX sh syntax compliance
