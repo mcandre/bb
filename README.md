@@ -1,5 +1,7 @@
 # bb: the awk build system
 
+> Your scientists were so preoccupied with whether they could, they didn’t stop to think if they should.
+
 # ABOUT
 
 `bb` demonstrates a working build system written in GNU awk, to organize build steps for awk projects.
