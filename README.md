@@ -22,6 +22,14 @@ Tasks:
 * test
 ```
 
+# CONFIGURATION
+
+Tasks are implemented with awk functions.
+
+Task trees are implemented with functions that call other functions.
+
+That's it.
+
 # REQUIREMENTS
 
 * a UNIX environment with [coreutils](https://www.gnu.org/software/coreutils/) / [base](http://ftp.freebsd.org/pub/FreeBSD/releases/) / [macOS](https://www.apple.com/macos) / [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) / etc.
