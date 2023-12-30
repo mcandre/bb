@@ -44,6 +44,7 @@ That's it.
 * [beltaloada](https://github.com/mcandre/beltaloada), a guide to writing build systems for (POSIX) sh
 * [dale](https://github.com/mcandre/dale) builds D projects
 * [Gradle](https://gradle.org/), a build system for JVM projects
+* [jelly](https://github.com/mcandre/jelly), a JSON task runner
 * [lake](https://luarocks.org/modules/steved/lake), a Lua task runner
 * [lichen](https://github.com/mcandre/lichen), a sed task runner
 * [Mage](https://magefile.org/), a task runner for Go projects
