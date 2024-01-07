@@ -51,6 +51,7 @@ That's it.
 * [npm](https://www.npmjs.com/), [Grunt](https://gruntjs.com/), Node.js task runners
 * [POSIX make](https://pubs.opengroup.org/onlinepubs/009695299/utilities/make.html), a task runner standard for C/C++ and various other software projects
 * [Rake](https://ruby.github.io/rake/), a task runner for Ruby projects
+* [Rebar3](https://www.rebar3.org/), a build system for Erlang projects
 * [rez](https://github.com/mcandre/rez) builds C/C++ projects
 * [Shake](https://shakebuild.com/), a task runner for Haskell projects
 * [ShellCheck](https://www.shellcheck.net/), a shell script linter with a rich collection of rules for promoting safer scripting
