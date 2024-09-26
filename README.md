@@ -42,6 +42,7 @@ That's it.
 * Inspiration from [nobuild](https://github.com/tsoding/nobuild), a convention for C/C++ build systems
 * [bashate](https://github.com/openstack/bashate), a shell script style linter
 * [beltaloada](https://github.com/mcandre/beltaloada), a guide to writing build systems for (POSIX) sh
+* [booty](https://github.com/mcandre/booty?tab=readme-ov-file) for JS/Node.js/altJS
 * [dale](https://github.com/mcandre/dale) builds D projects
 * [Gradle](https://gradle.org/), a build system for JVM projects
 * [jelly](https://github.com/mcandre/jelly), a JSON task runner
