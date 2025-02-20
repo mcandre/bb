@@ -37,6 +37,10 @@ That's it.
 * a UNIX environment with [coreutils](https://www.gnu.org/software/coreutils/) / [base](http://ftp.freebsd.org/pub/FreeBSD/releases/) / [macOS](https://www.apple.com/macos) / [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) / etc.
 * GNU [awk](https://www.gnu.org/software/gawk/manual/gawk.html) 5+
 
+## Recommended
+
+* [zsh](https://www.zsh.org/)
+
 # SEE ALSO
 
 * Inspiration from [nobuild](https://github.com/tsoding/nobuild), a convention for C/C++ build systems
